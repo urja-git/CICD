@@ -1,5 +1,7 @@
 pipeline {
-	agent any 
+	agent {
+  		label 'mens-label'
+	}
 	parameters {
 		choice(name: 'ENVIRONMENT', choices: ['QA','UAT'], description: 'Pick Environment value')
 	}
