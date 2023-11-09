@@ -13,7 +13,7 @@ pipeline {
 		stage('Build') {
 	           steps {
 		          sh 'JAVA_HOME=/home/grras/slave-dir/jdk-11.0.20'
-			  sh '/home/grras/slave-dir/apache-maven-3.9.4/bin/mvn install'
+			  sh 'M2_HOME=/home/grras/slave-dir/apache-maven-3.9.4/bin/mvn install'
 	                 }}
 		stage('Deployment'){
 		   steps {
