@@ -16,6 +16,6 @@ pipeline {
 	                 }}
 		stage('Deployment'){
 		   steps {
-		sh 'cp target/CICD.war /home/swapnil/Documents/DevOps-Software/apache-tomcat-9.0.79/webapps'
+		sh 'cp target/CICD.war /home/grras/slave-dir/apache-tomcat-9.0.79/webapps'
 			}}
 }}
